@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML Actividad 2 LMSGI - Biblioteca -->
+
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+
+<biblioteca>
+    
+    <documentos>
+
+        <!-- LIBRO -->
+        <libro id="L0001" tipo_clase="novela" paginas="100">
+            <titulo>El libro gordo de Petete</titulo>
+            <capitulo paginas="50">
+                <titulo>Capitulo 1</titulo>
+                <contenido url="http://www.contenido.es/id=L0001/cap1"></contenido>
+            </capitulo>
+            <capitulo paginas="50">
+                <titulo>Capitulo 2</titulo>
+                <contenido url="http://www.contenido.es/id=L0001/cap2"></contenido>
+            </capitulo>
+            <indice>
+                <![CDATA[
+                    Inicio.............1
+                    Final..............2
+                ]]>
+            </indice>
+            <sinopsis>Un libraco gordo</sinopsis>
+            <contenido url="http://www.contenido.es/id=L0001"></contenido>
+        </libro>
+
+        <!-- REVISTA -->
+        <revista id="R0001" tipo_clase="corazón" paginas="30">
+            <titulo>Moneda y Timbre</titulo>
+            <numero>654</numero>
+            <indice>
+                <![CDATA[
+                    Inicio.............1
+                    Final..............2
+                ]]>
+            </indice>
+            <seccionr paginas="12">
+                <contenido url="http://www.contenido.es/id=R0001/sec01"></contenido>
+            </seccionr>
+            <seccionr paginas="13">
+                <contenido url="http://www.contenido.es/id=R0001/sec02"></contenido>
+            </seccionr>
+            <contenido url="http://www.contenido.es/id=R0001"></contenido>
+        </revista>
+
+        <!-- PERIODICO -->
+        <periodico id="P0001" tipo_clase="nacional" fecha="1990-11-21">
+        
+            <seccionp tipo_sec="económica">
+                <articulo autor="Pedro">
+                    <contenido url="http://www.contenido.es/id=P0001/economica"></contenido>
+                </articulo>
+            </seccionp>
+            <seccionp tipo_sec="opinión">
+                <articulo autor="Juan">
+                    <contenido url="http://www.contenido.es/id=P0001/opinion"></contenido>
+                </articulo>
+            </seccionp>
+            <seccionp tipo_sec="deportes">
+                <articulo autor="Pablo">
+                    <contenido url="http://www.contenido.es/id=P0001/deportes"></contenido>
+                </articulo>
+            </seccionp>
+            <seccionp tipo_sec="nacional">
+                <articulo autor="Sonia">
+                    <contenido url="http://www.contenido.es/id=P0001/nacional"></contenido>
+                </articulo>
+            </seccionp>
+            <seccionp tipo_sec="internacional">
+                <articulo autor="Jana">
+                    <contenido url="http://www.contenido.es/id=P0001/internaciona"></contenido>
+                </articulo>
+            </seccionp>
+            <indice>
+                <![CDATA[
+                    Inicio.............1
+                    Final..............2
+                ]]>
+            </indice>
+            <contenido url="http://www.contenido.es/id=P0001"></contenido>
+        </periodico>
+
+    </documentos>  
+
+</biblioteca>

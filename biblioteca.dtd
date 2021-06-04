@@ -1,0 +1,49 @@
+<!-- BIBLIOTECA -->
+<!ELEMENT biblioteca (documentos)>
+
+<!ELEMENT documentos (libro*,revista*,periodico*)>
+<!-- DOCUMENTOS (podrían existir otros nodos como empleados o inventario) -->
+<!-- Comunes a varios -->
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT indice (#PCDATA)>
+<!ELEMENT contenido EMPTY>
+<!ATTLIST contenido url CDATA #REQUIRED>
+
+<!-- LIBRO -->
+<!ELEMENT libro (titulo, capitulo+, indice, sinopsis, contenido)>
+<!ATTLIST libro 
+    id CDATA #REQUIRED
+    tipo_clase (novela | infantil | didactico) #REQUIRED
+    paginas CDATA #REQUIRED
+>
+    
+<!ELEMENT capitulo (titulo, contenido)>
+<!ATTLIST capitulo paginas CDATA #REQUIRED> 
+    
+<!ELEMENT sinopsis (#PCDATA)>
+
+
+<!-- REVISTA -->
+<!ELEMENT revista (titulo, numero, indice, seccionr+, contenido)>
+<!ATTLIST revista 
+    id CDATA #REQUIRED
+    tipo_clase (informática | corazón | coches | investigación | otras) #REQUIRED
+    paginas CDATA #REQUIRED
+>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT seccionr (contenido)>
+<!ATTLIST seccionr paginas CDATA #REQUIRED>
+
+<!-- PERIODICO -->
+<!ELEMENT periodico (seccionp+, indice, contenido)>
+<!ATTLIST periodico 
+    id CDATA #REQUIRED
+    tipo_clase (nacional | internacional) #REQUIRED
+    fecha CDATA #REQUIRED
+>
+
+<!ELEMENT seccionp (articulo)>
+<!ATTLIST seccionp tipo_sec (económica | opinión | deportes | nacional | internacional) #REQUIRED>
+
+<!ELEMENT articulo (contenido)>
+<!ATTLIST articulo autor CDATA #REQUIRED>

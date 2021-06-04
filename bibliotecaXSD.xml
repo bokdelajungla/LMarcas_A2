@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML Actividad 2 LMSGI - Biblioteca -->
+
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
+    <documentos>
+
+        <!-- Jorge -->
+        <!-- LIBRO -->
+        <libro id="L0001" tipo_clase="novela" paginas="100">
+            <titulo>El libro gordo de Petete</titulo>
+            <capitulo paginas="50">
+                <titulo>Capitulo 1</titulo>
+                <contenido url="http://www.contenido.es/id=L0001/cap1"></contenido>
+            </capitulo>
+            <capitulo paginas="50">
+                <titulo>Capitulo 2</titulo>
+                <contenido url="http://www.contenido.es/id=L0001/cap2"></contenido>
+            </capitulo>
+            <indice>
+                <![CDATA[
+                    Inicio.............1
+                    Final..............2
+                ]]>
+            </indice>
+            <sinopsis>Un libraco gordo</sinopsis>
+            <contenido url="http://www.contenido.es/id=L0001"></contenido>
+        </libro>
+
+        <!-- REVISTA -->
+        <revista id="R0001" tipo_clase="corazon" paginas="30">
+            <titulo>Moneda y Timbre</titulo>
+            <numero>654</numero>
+            <indice>
+                <![CDATA[
+                    Inicio.............1
+                    Final..............2
+                ]]>
+            </indice>
+            <seccion paginas="12">
+                <contenido url="http://www.contenido.es/id=R0001/sec01"></contenido>
+            </seccion>
+            <seccion paginas="13">
+                <contenido url="http://www.contenido.es/id=R0001/sec02"></contenido>
+            </seccion>
+            <contenido url="http://www.contenido.es/id=R0001"></contenido>
+        </revista>
+
+        <!-- PERIODICO -->
+        <periodico id="P0001" tipo_clase="nacional" fecha="1990-11-21"> <!-- La fecha tiene el formato yyyy-mm-dd -->
+            <seccion tipo_sec="economica">
+                <articulo autor="Pedro">La economía se desploma</articulo>
+                <articulo autor="Cagarruti">Press F to pay respects</articulo>
+                <contenido url="http://www.contenido.es/id=P0001/economica"></contenido>
+            </seccion>
+            <seccion tipo_sec="opinion">
+                <articulo autor="Juan">El XSD es muy chulo</articulo>
+                <articulo autor="Juan">El XSD es lo peor</articulo>
+                <contenido url="http://www.contenido.es/id=P0001/opinion"></contenido>
+            </seccion>
+            <seccion tipo_sec="deportes">
+                <articulo autor="Pablo">El Real Madrid vuelve a perder</articulo>
+                <contenido url="http://www.contenido.es/id=P0001/deportes"></contenido>
+            </seccion>
+            <seccion tipo_sec="nacional">
+                <articulo autor="Sonia">El perro de San Roque sí que tenía rabo</articulo>
+                <contenido url="http://www.contenido.es/id=P0001/nacional"></contenido>
+            </seccion>
+            <seccion tipo_sec="internacional">
+                <articulo autor="Jana">China sigue molando... ¡paguen luego!</articulo>
+                <contenido url="http://www.contenido.es/id=P0001/internacional"></contenido>
+            </seccion>
+            <indice>
+                <![CDATA[
+                    Inicio.............1
+                    Final..............2
+                ]]>
+            </indice>
+            <contenido url="http://www.contenido.es/id=P0001"></contenido>
+        </periodico>
+
+        <!-- Alfonso -->
+        <libro id="L1234" tipo_clase="novela" paginas="750">
+            <titulo>La Biblia</titulo>
+            <capitulo paginas="185">
+                <titulo>Génesis</titulo>
+                <contenido url="http://www.l1234.es/genesis" />
+            </capitulo>
+            <capitulo paginas="100">
+                <titulo>Éxodo</titulo>
+                <contenido url="http://www.l1234.es/exodo" />
+            </capitulo>
+            <indice><![CDATA[
+                1 Comienzo
+                2 Continuación
+                3 Final]]>
+            </indice>
+            <sinopsis>La historia del origen del hombre desde un punto de vista religioso</sinopsis>
+            <contenido url="http://www.l1234.es/LaBiblia"/>
+        </libro>
+
+        <revista id="R1234" tipo_clase="informatica" paginas="125">
+            <titulo>Micromanía</titulo>
+            <numero>14</numero>
+            <indice>1 Mejores juegos, 2 Pokes, 3 Entrevistas</indice>
+            <seccion paginas="18">
+                <contenido url="http://www.r1234.es/mejoresjuegos" />
+            </seccion>
+            <seccion paginas="13">
+                    <contenido url="http://www.r1234.es/pokes" />
+            </seccion>
+            <contenido url="http://www.r1234.es" />
+        </revista>
+
+        <periodico id="P1234" tipo_clase="nacional" fecha="2021-05-11">        
+            <seccion tipo_sec="deportes">                
+                <articulo autor="Paco Roncero">Messi deja el Barsa</articulo>
+                <articulo autor="Lamas">Madrid Campeón</articulo>
+                <contenido url="http://www.p1234.es/deportes" />                
+            </seccion>
+            <seccion tipo_sec="economica">                
+                    <articulo autor="Montero">España en quiebra</articulo>
+                    <articulo autor="Escribá">Sin pensiones</articulo>
+                    <contenido url="http://www.p1234.es/economica" />                
+            </seccion>
+            <indice>Deportes, Economía, Anuncios</indice>
+            <contenido url="http://www.p1234.es" />
+        </periodico>
+
+        <!-- César -->
+        <libro id="L0123" paginas="245" tipo_clase="novela">
+            <titulo>Don Quijote </titulo>
+            <capitulo paginas="23">
+                <titulo>caapitulo 1</titulo>
+                <contenido url="http://www.libros.es"/>
+            </capitulo>
+            <capitulo paginas="18">
+                <titulo>capitulo 2</titulo>
+                <contenido url="http://www.libros.es"/>
+            </capitulo>
+            <indice> Aqui se encuentra el indice del libro</indice>
+            <sinopsis>Aqui se encuentra la sinopsis del libro</sinopsis>
+            <contenido url="http://www.libros.es/l0123.html" />
+        </libro>
+
+        <revista id="R0123" tipo_clase="coches" paginas="9">
+            <titulo>coches.net</titulo>
+            <numero>23</numero>
+            <indice></indice>
+            <seccion paginas="5">
+                <contenido url="http://www.revistas-de-coches.es/sec01"/>
+            </seccion>
+            <seccion paginas="3">
+                <contenido url="http://www.revistas-de-coches.es/sec02"/>
+            </seccion>
+            <contenido url="http://www.revistas-de-coches.es"/>
+        </revista>
+
+        <periodico id="P0123" tipo_clase="nacional" fecha="2021-05-15">
+            <seccion tipo_sec="deportes">           
+                <articulo autor="cesar">asd</articulo>
+                <articulo autor="jose luis">asdf</articulo>
+                <contenido url="http://www.periodico.es/deportes"/>
+            </seccion>
+            <indice>Aqui se encuentra el indice del periodico</indice>
+            <contenido url="http://www.periodico.es"></contenido>
+        </periodico>
+
+    </documentos>  
+
+</biblioteca>
